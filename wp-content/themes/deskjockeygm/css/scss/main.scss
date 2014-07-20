@@ -1,0 +1,44 @@
+// Colors
+
+$color_font:									rgb(0,0,0);
+$color_links:									rgb(25,112,230);
+$color_bg:										rgb(222,222,222);
+$color_white:									rgb(255,255,255);
+$color_black:									rgb(0,0,0);
+
+// Fonts
+
+$font_helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// Mixins
+
+@mixin css_transition {
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+@mixin prefix($property, $value, $prefixes: webkit moz ms o spec) {
+	@each $p in $prefixes {
+		@if $p == spec {
+			#{$property}: $value;
+		}
+		else {
+			-#{$p}-#{$property}: $value;
+		}
+	}
+}
+
+// Breakpoints
+
+$breakpoint_mobile: 635px;
+
+// Imports
+
+@import "front.scss";
+@import "global.scss";
+@import "ie.scss";
+@import "print.scss";
+@import "reset.scss";
