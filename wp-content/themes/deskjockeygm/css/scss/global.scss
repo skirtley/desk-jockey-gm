@@ -32,6 +32,12 @@ em {
 	clear: both;
 }
 
+.main-wrap {
+	background: red;
+	width: 90%;
+	margin: 0 auto;
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 

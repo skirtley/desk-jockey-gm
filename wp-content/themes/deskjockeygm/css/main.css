@@ -28,6 +28,11 @@ em {
 .clear {
   clear: both; }
 
+.main-wrap {
+  background: red;
+  width: 90%;
+  margin: 0 auto; }
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /*STYLES*/ }
@@ -84,3 +89,36 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+header {
+  width: 100%;
+  min-height: 200px;
+  background: white; }
+  header .menu-main-menu-container {
+    background: #1d3a83;
+    width: 100%;
+    clear: both; }
+    header .menu-main-menu-container a {
+      color: #ff6600; }
+  header .logo {
+    width: 45%;
+    max-width: 400px;
+    float: left;
+    padding: 20px 0 0 20px; }
+    header .logo img {
+      width: 100%;
+      height: auto; }
+  header .tagline {
+    font-style: italic;
+    float: right;
+    width: 50%;
+    padding-top: 70px; }
+    header .tagline span {
+      margin: 0 auto;
+      display: block;
+      width: 75%; }
+
+footer {
+  background: pink;
+  min-height: 200px;
+  width: 100%; }

@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<body <?php body_class($class); ?>>
-
 <?php 
 if (have_posts()) :
    while (have_posts()) :

@@ -1,0 +1,34 @@
+header {
+	width: 100%;
+	min-height: 200px;
+	background: $color_white;
+	.menu-main-menu-container {
+		background: $color_blue;
+		width: 100%;
+		clear: both;
+		a {
+			color: $color_orange;
+		}
+	}
+	.logo {
+		width: 45%;
+		max-width: 400px;
+		float: left;
+		padding: 20px 0 0 20px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.tagline {
+		font-style: italic;
+		float: right;
+		width: 50%;
+		padding-top: 70px;
+		span {
+			margin: 0 auto;
+			display: block;
+			width: 75%;
+		}
+	}
+}

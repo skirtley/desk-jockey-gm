@@ -5,6 +5,8 @@ $color_links:									rgb(25,112,230);
 $color_bg:										rgb(222,222,222);
 $color_white:									rgb(255,255,255);
 $color_black:									rgb(0,0,0);
+$color_blue:									rgb(29,58,131);
+$color_orange:									rgb(255,102,0);
 
 // Fonts
 
@@ -42,3 +44,5 @@ $breakpoint_mobile: 635px;
 @import "ie.scss";
 @import "print.scss";
 @import "reset.scss";
+@import "header.scss";
+@import "footer.scss";
