@@ -1,0 +1,56 @@
+.home {
+	.content-wrap {
+		.left-side {
+			float: left;
+			width: 70%;
+			.post {
+				background: yellow;
+				margin: 20px 0;
+				position: relative;
+				color: $color_white;
+				h2 {
+					padding-bottom: 15px;
+				}
+				h2 a {
+					text-decoration: none;
+					color: $color_white;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				.feature-image {
+				}
+				.text-wrap {
+					background-color: $color_black_trans;
+					position: absolute;
+					bottom: 0;
+					padding: 20px;
+				}
+				.read-more {
+					text-align: right;
+					display: block;
+					padding: 10px 0;
+					text-transform: uppercase;
+					a {
+						color: $color_white;
+						background: $color_white_trans;
+						padding: 10px;
+						text-decoration: none;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			.wp-post-image {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.right-side {
+			background: yellow;
+			float: right;
+			width: 30%;
+		}
+	}
+}
