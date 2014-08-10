@@ -4,6 +4,7 @@ add_action( 'wp_enqueue_scripts', 'sam_theme_scripts' );
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'html5', array( 'search-form' ) );
 set_post_thumbnail_size( 300, 300 ); // 300 pixels wide by 300 pixels tall, resize mode
 
 // smart jquery inclusion

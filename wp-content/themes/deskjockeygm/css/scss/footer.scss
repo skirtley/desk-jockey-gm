@@ -1,5 +1,43 @@
 footer {
-	background: pink;
-	min-height: 200px;
+	border-top: 2px solid $color_orange;
+	.content {
+		padding: $footer_padding;
+	}
+	background-image: url("../img/squairy_light.png");
+	min-height: 150px;
 	width: 100%;
+	.left-side {
+		float: left;
+		width: 35%;
+		text-shadow: 1px 1px 3px #000000;
+		img {
+			max-width: 100px;
+			height: auto;
+			float: left;
+		}
+		.copyright {
+			font-size: 14px;
+			float: left;
+			padding: 30px 0 0 25px;
+		}
+	}
+	.right-side {
+		float: right;
+		width: 65%;
+		text-align: right;
+		.search-form {
+			padding: 20px 0;
+		}
+		.menu-footer-menu-container {
+			ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				font-size: 14px;
+			}
+			li {
+				display: inline;
+			}
+		}
+	}
 }

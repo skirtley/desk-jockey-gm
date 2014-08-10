@@ -16,6 +16,6 @@
 
 <header>
 <div class="logo"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/logo_large.png" alt="Desk Jockey General Manager" /></a></div>
-<div class="tagline"><span>Fantasy sports analysis for all the part-time Desk Jockey, full-time General Managers of the world.<br> Image faded in, grass/crowd/etc.</span></div>
+<div class="tagline"><span>Fantasy sports analysis<br> for the part-time Desk Jockey,<br> full-time General Manager.</span></div>
 <?php wp_nav_menu( array('menu' => 'main-menu' )); ?>
 </header>

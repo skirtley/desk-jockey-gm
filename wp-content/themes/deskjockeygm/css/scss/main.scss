@@ -8,8 +8,11 @@ $color_black_trans:								rgba(0,0,0,0.8);
 $color_white_trans:								rgba(255,255,255,0.2);
 $color_grey:									rgb(225,225,225);
 $color_blue:									rgb(29,58,131);
+$color_blue_off:								rgb(51,102,153);
 $color_blue_light:								rgb(110,134,193);
+$color_twitter:									rgb(64,153,255);
 $color_orange:									rgb(255,102,0);
+$color_orange_trans:							rgba(255,102,0,0.2);
 
 // Fonts
 
@@ -18,11 +21,11 @@ $font_helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue"
 // Mixins
 
 @mixin css_transition {
-	-webkit-transition: all 0.25s ease;
-	-moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 @mixin prefix($property, $value, $prefixes: webkit moz ms o spec) {
@@ -39,6 +42,8 @@ $font_helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue"
 // Breakpoints
 
 $breakpoint_mobile: 635px;
+$footer_padding: 25px;
+$post_spacing: 20px;
 
 // Imports
 

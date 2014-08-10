@@ -17,13 +17,11 @@
 		    </div><!--single-post-->
 		   <?php endwhile;
 		endif; ?>
-		<?php edit_post_link(); ?>
 	</div><!--left-side-->
 
 	<div class="right-side">
 		<div class="content">
-			<h3>Straight from the commish's desk:</h3>
-			<?php fetchTweets( array( 'screen_name' => 'samkirtley' ) ); ?>
+			<?php fetchTweets( array( 'screen_name' => 'samkirtley',  'count' => 10 ) ); ?>
 		</div><!--content-->
 	</div><!--right-side-->
 	<div class="clear"></div>

@@ -1,10 +1,14 @@
 .home {
 	.content-wrap {
+		padding: 40px 0 20px 0;
 		.left-side {
 			float: left;
 			width: 65%;
+			#first {
+				margin-top: 0;
+			}
 			.post {
-				margin: 20px 0;
+				margin: $post_spacing 0;
 				position: relative;
 				color: $color_white;
 				h2 {
@@ -52,6 +56,18 @@
 			.content {
 				width: 90%;
 				margin: 0 auto;
+			}
+			.tweet-headline {
+				display: block;
+				text-align: center;
+				margin-bottom: $post_spacing;
+			}
+			div.fetch-tweets {
+				background-image: url("../img/squairy_light.png");
+				border: 1px solid $color_black_trans;
+				padding: 10px;
+				-webkit-box-shadow:inset 0 0 2px 2px rgba(0,0,0,.3);
+				box-shadow:inset 0 0 2px 2px rgba(0,0,0,.3);
 			}
 		}
 	}
