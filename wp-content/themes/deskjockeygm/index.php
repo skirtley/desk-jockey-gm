@@ -21,7 +21,10 @@
 	</div><!--left-side-->
 
 	<div class="right-side">
-		Right side content...Twitter Feed
+		<div class="content">
+			<h3>Straight from the commish's desk:</h3>
+			<?php fetchTweets( array( 'screen_name' => 'samkirtley' ) ); ?>
+		</div><!--content-->
 	</div><!--right-side-->
 	<div class="clear"></div>
 </div><!--content-wrap-->

@@ -1,8 +1,7 @@
 .home .content-wrap .left-side {
   float: left;
-  width: 70%; }
+  width: 65%; }
   .home .content-wrap .left-side .post {
-    background: yellow;
     margin: 20px 0;
     position: relative;
     color: white; }
@@ -34,9 +33,11 @@
     width: 100%;
     height: auto; }
 .home .content-wrap .right-side {
-  background: yellow;
   float: right;
-  width: 30%; }
+  width: 35%; }
+  .home .content-wrap .right-side .content {
+    width: 90%;
+    margin: 0 auto; }
 
 body {
   color: black;
