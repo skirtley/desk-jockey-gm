@@ -2,36 +2,36 @@ body {
 	color: $color_font;
 	font-family: $font_helvetica;
 	background-image: url("../img/random_grey_variations.png");
-}
+	a {
+		color: $color_blue_off;
+		&:hover {
+			color: $color_blue;
+			@include css_transition;
+		}
+	}
 
-a {
-	color: $color_blue_off;
-	&:hover {
-		color: $color_blue;
-		@include css_transition;
+	a img {
+		border: none;
+	}
+
+	p {
+		padding-bottom: 1em;
+		line-height: 1.5em;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	.clear {
+		clear: both;
 	}
 }
 
-a img {
-	border: none;
-}
-
-p {
-	padding-bottom: 1em;
-	line-height: 1.5em;
-}
-
-strong {
-	font-weight: bold;
-}
-
-em {
-	font-style: italic;
-}
-
-.clear {
-	clear: both;
-}
 
 .main-wrap {
 	background: $color_white;
@@ -40,6 +40,11 @@ em {
 	max-width: 1024px;
 	box-shadow:  5px 0px 5px -3px rgba(0, 0, 0, .5), -5px 0px 5px -3px rgba(0, 0, 0, .5);
 	-webkit-box-shadow:  5px 0px 5px -3px rgba(0, 0, 0, .5), -5px 0px 5px -3px rgba(0, 0, 0, .5);
+	.body-content {
+		width: 85%;
+		margin: $post_spacing auto;
+		min-height: 400px;
+	}
 }
 
 /* iPads (portrait and landscape) ----------- */

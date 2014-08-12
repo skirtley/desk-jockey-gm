@@ -1,4 +1,5 @@
-.home {
+.home,
+.category {
 	.content-wrap {
 		padding: 40px 0 20px 0;
 		.left-side {
@@ -11,6 +12,7 @@
 				margin: $post_spacing 0;
 				position: relative;
 				color: $color_white;
+				min-height: 200px;
 				h2 {
 					padding-bottom: 15px;
 				}
@@ -48,6 +50,9 @@
 			.wp-post-image {
 				width: 100%;
 				height: auto;
+			}
+			.navigation {
+				text-align: center;
 			}
 		}
 		.right-side {
