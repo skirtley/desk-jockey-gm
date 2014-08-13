@@ -11,6 +11,7 @@
 		   <?php endwhile;
 		endif; ?>
 		<?php edit_post_link(); ?>
+		<?php comments_template(); ?> 
 	</div><!--body_content-->
 
 
