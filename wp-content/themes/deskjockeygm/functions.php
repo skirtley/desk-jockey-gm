@@ -21,6 +21,7 @@ if (!is_admin()) {
 function sam_theme_scripts() {
 	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css' );
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'modernizr-js', get_template_directory_uri() . '/js/modernizr.custom.61417.js', array(), '2.8.3', false );
 }
 
 ?>

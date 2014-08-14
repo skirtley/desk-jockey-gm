@@ -1,9 +1,11 @@
 <footer>
 	<div class="content">
 		<div class="left-side">
-			<img src="<?php bloginfo('template_directory'); ?>/img/logo_only.png" alt="Desk Jockey General Manager" /><br>
-			<span class="copyright">Desk Jockey GM &copy; <?php echo date("Y") ?>.<br>
-			All rights reserved.</span>
+			<div class="left-wrap">
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo_only.png" alt="Desk Jockey General Manager" /><br>
+				<span class="copyright">Desk Jockey GM &copy; <?php echo date("Y") ?>.<br>
+				All rights reserved.</span>
+			</div>
 		</div>
 		<div class="right-side">
 			<a href="https://twitter.com/deskjockeyGM" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @deskjockeyGM</a>

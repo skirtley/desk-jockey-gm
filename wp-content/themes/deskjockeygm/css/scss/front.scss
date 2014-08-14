@@ -79,8 +79,16 @@
 	}
 }
 
-@media screen and (max-width: 1024px){
-	.main-wrap {
-		background: purple;
+@media screen and (max-width: $breakpoint_ipad) {
+	.home,
+	.category {
+		.content-wrap {
+			.left-side {
+				width: 100%;
+			}
+			.right-side {
+				width: 100%;
+			}
+		}
 	}
 }

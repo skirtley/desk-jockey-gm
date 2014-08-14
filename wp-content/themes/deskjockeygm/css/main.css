@@ -74,9 +74,13 @@
       -webkit-box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3);
       box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3); }
 
-@media screen and (max-width: 1024px) {
-  .main-wrap {
-    background: purple; } }
+@media screen and (max-width: 750px) {
+  .home .content-wrap .left-side,
+  .category .content-wrap .left-side {
+    width: 100%; }
+  .home .content-wrap .right-side,
+  .category .content-wrap .right-side {
+    width: 100%; } }
 body {
   color: black;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -244,6 +248,13 @@ header {
       padding: 50px 20px 0 0;
       line-height: 1.5em; }
 
+@media screen and (max-width: 750px) {
+  header .logo {
+    width: 100%;
+    max-width: none;
+    padding-left: 0; }
+  header .tagline {
+    display: none; } }
 footer {
   border-top: 2px solid #ff6600;
   background-image: url("../img/squairy_light.png");
@@ -276,6 +287,31 @@ footer {
     footer .right-side .menu-footer-menu-container li {
       display: inline; }
 
+@media screen and (max-width: 750px) {
+  footer .left-side img {
+    max-width: 50px;
+    padding-left: 35px;
+    float: none; }
+  footer .left-side .copyright {
+    padding: 30px 0 0 0;
+    float: none; } }
+@media screen and (max-width: 550px) {
+  footer .left-side {
+    width: 100%; }
+    footer .left-side img,
+    footer .left-side .copyright {
+      padding: 0;
+      display: block;
+      margin: 0 auto;
+      text-align: center; }
+  footer .right-side {
+    width: 100%; }
+    footer .right-side .search-form,
+    footer .right-side .menu-footer-menu-container {
+      display: none; }
+    footer .right-side .twitter-follow-button {
+      display: block;
+      margin: 15px auto; } }
 /* =WordPress Core
 -------------------------------------------------------------- */
 .alignnone {

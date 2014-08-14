@@ -67,3 +67,16 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: $breakpoint_ipad) {
+	header {
+		.logo {
+			width: 100%;
+			max-width: none;
+			padding-left: 0;
+		}
+		.tagline {
+			display: none;
+		}
+	}
+}
