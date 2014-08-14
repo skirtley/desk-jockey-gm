@@ -51,6 +51,17 @@ body {
 	}
 }
 
+a.addthis_button {
+	display: block;
+	padding: 20px 0;
+}
+
+.page {
+	#disqus_thread {
+		display: none;
+	}
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
