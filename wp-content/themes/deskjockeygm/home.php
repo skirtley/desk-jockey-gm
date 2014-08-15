@@ -22,7 +22,7 @@
 
 	<div class="right-side">
 		<div class="content">
-			<?php fetchTweets( array( 'screen_name' => 'samkirtley',  'count' => 10 ) ); ?>
+			<?php fetchTweets( array( 'screen_name' => 'deskjockeyGM',  'count' => 10 ) ); ?>
 		</div><!--content-->
 	</div><!--right-side-->
 	<div class="clear"></div>
