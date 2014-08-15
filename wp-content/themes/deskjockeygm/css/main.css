@@ -17,7 +17,8 @@
       .home .content-wrap .left-side .post h2,
       .category .content-wrap .left-side .post h2 {
         padding-bottom: 15px;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        line-height: 1.25em; }
       .home .content-wrap .left-side .post h2 a,
       .category .content-wrap .left-side .post h2 a {
         text-decoration: none;
@@ -81,6 +82,17 @@
   .home .content-wrap .right-side,
   .category .content-wrap .right-side {
     width: 100%; } }
+@media screen and (max-width: 550px) {
+  .home .content-wrap .left-side .post .text-wrap,
+  .category .content-wrap .left-side .post .text-wrap {
+    padding: 0;
+    width: 100%; }
+    .home .content-wrap .left-side .post .text-wrap h2,
+    .category .content-wrap .left-side .post .text-wrap h2 {
+      padding: 15px 0 15px 15px; }
+  .home .content-wrap .left-side .post .excerpt,
+  .category .content-wrap .left-side .post .excerpt {
+    display: none; } }
 body {
   color: black;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -120,12 +132,23 @@ body {
     width: 85%;
     margin: 20px auto;
     min-height: 400px; }
+    .main-wrap .body-content h2.page_title {
+      margin-bottom: 0;
+      line-height: 1.5em; }
+    .main-wrap .body-content .date {
+      font-size: 12px;
+      color: black;
+      font-style: italic;
+      margin-bottom: 15px; }
 
 a.addthis_button {
   display: block;
   padding: 20px 0; }
 
-.page #disqus_thread {
+.page .main-wrap .body-content h2.page_title {
+  margin-bottom: 15px; }
+
+.mobile_tagline {
   display: none; }
 
 /* iPads (portrait and landscape) ----------- */
@@ -220,7 +243,8 @@ header {
       header .menu-main-menu-container ul li {
         display: inline-block;
         width: 18%;
-        text-align: center; }
+        text-align: center;
+        white-space: nowrap; }
   header .logo,
   header .tagline {
     height: 200px;
@@ -250,10 +274,27 @@ header {
 
 @media screen and (max-width: 750px) {
   header .logo {
-    width: 100%;
+    width: 60%;
+    float: none;
+    margin: 0 auto;
     max-width: none;
-    padding-left: 0; }
+    padding-left: 0;
+    height: auto; }
   header .tagline {
+    display: none; }
+  header .mobile_tagline {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1.5em;
+    color: #1d3a83;
+    border-bottom: 1px solid #e1e1e1; } }
+@media screen and (max-width: 550px) {
+  header .logo {
+    width: 100%; }
+  header .menu-main-menu-container {
     display: none; } }
 footer {
   border-top: 2px solid #ff6600;
@@ -264,7 +305,7 @@ footer {
     padding: 25px; }
   footer .left-side {
     float: left;
-    width: 35%; }
+    width: 45%; }
     footer .left-side img {
       max-width: 100px;
       height: auto;
@@ -275,7 +316,7 @@ footer {
       padding: 30px 0 0 25px; }
   footer .right-side {
     float: right;
-    width: 65%;
+    width: 55%;
     text-align: right; }
     footer .right-side .search-form {
       padding: 20px 0; }

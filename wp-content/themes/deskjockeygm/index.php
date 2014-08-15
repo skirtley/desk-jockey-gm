@@ -6,12 +6,13 @@
 		if (have_posts()) :
 		   while (have_posts()) :
 		      the_post(); ?>
-		         <h2><?php the_title(); ?></h2>
+		         <h2 class="page_title"><?php the_title(); ?></h2>
+		         <?php if ( ! is_page() ) {?><div class="date"><?php the_date(); ?></div><?php } ?>
 		         <?php the_content(); ?>
 		   <?php endwhile;
 		endif; ?>
 		
-		<?php comments_template(); ?> 
+		<?php if ( ! is_page() ) {?><?php comments_template(); ?><?php } ?>
 	</div><!--body_content-->
 
 

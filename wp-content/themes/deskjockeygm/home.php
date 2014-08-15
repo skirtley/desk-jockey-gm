@@ -11,7 +11,7 @@
 				<div class="feature-image"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
 				<div class="text-wrap">
 					<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			        <?php the_excerpt(); ?>
+			        <div class="excerpt"><?php the_excerpt(); ?></div>
 			        <div class="read-more"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read More</a></div>
 		    	</div><!--text-wrap-->
 		    </div><!--single-post-->

@@ -48,6 +48,16 @@ body {
 		width: 85%;
 		margin: $post_spacing auto;
 		min-height: 400px;
+		h2.page_title {
+			margin-bottom: 0;
+			line-height: 1.5em;
+		}
+		.date {
+			font-size: 12px;
+			color: $color_black;
+			font-style: italic;
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -56,10 +66,14 @@ a.addthis_button {
 	padding: 20px 0;
 }
 
-.page {
-	#disqus_thread {
-		display: none;
+.page .main-wrap .body-content {
+	h2.page_title {
+		margin-bottom: 15px;
 	}
+}
+
+.mobile_tagline {
+	display: none;
 }
 
 /* iPads (portrait and landscape) ----------- */

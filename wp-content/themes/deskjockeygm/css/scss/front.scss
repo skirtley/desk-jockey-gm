@@ -16,6 +16,7 @@
 				h2 {
 					padding-bottom: 15px;
 					margin-bottom: 0;
+					line-height: 1.25em;
 				}
 				h2 a {
 					text-decoration: none;
@@ -88,6 +89,28 @@
 			}
 			.right-side {
 				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint_mobile) {
+	.home,
+	.category {
+		.content-wrap {
+			.left-side {
+				.post {
+					.text-wrap {
+						padding: 0;
+						width: 100%;
+						h2 {
+							padding: 15px 0 15px 15px;
+						}
+					}
+					.excerpt {
+						display: none;
+					}
+				}
 			}
 		}
 	}

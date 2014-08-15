@@ -3,6 +3,7 @@
    <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php wp_title(); ?></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
@@ -17,5 +18,6 @@
 <header>
 <div class="logo"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/img/logo_large.png" alt="Desk Jockey General Manager" /></a></div>
 <div class="tagline"><span>Fantasy sports analysis<br> for the part-time Desk Jockey,<br> full-time General Manager.</span></div>
+<div class="mobile_tagline">Fantasy sports analysis for the part-time Desk Jockey, full-time General Manager.</div>
 <?php wp_nav_menu( array('menu' => 'main-menu' )); ?>
 </header>
