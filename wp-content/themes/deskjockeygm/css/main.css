@@ -154,6 +154,10 @@ a.addthis_button {
 .mobile_tagline {
   display: none; }
 
+@media screen and (max-width: 550px) {
+  .main-wrap .body-content .wp-caption {
+    width: 100%;
+    height: auto; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /*STYLES*/ }
