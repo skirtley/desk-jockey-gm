@@ -166,10 +166,20 @@ a.addthis_button {
   /*STYLES*/ }
 /*** IE 8 ***/
 @media \0screen {
-  /*STYLES*/ }
+  .home .content-wrap .left-side .post .text-wrap,
+  .category .content-wrap .left-side .post .text-wrap {
+    background-color: black; }
+  .home .content-wrap .right-side div.fetch-tweets,
+  .category .content-wrap .right-side div.fetch-tweets {
+    border: 1px solid black; } }
 /*** IE 7 ***/
 @media screen\9 {
-  /*STYLES*/ }
+  .home .content-wrap .left-side .post .text-wrap,
+  .category .content-wrap .left-side .post .text-wrap {
+    background-color: black; }
+  .home .content-wrap .right-side div.fetch-tweets,
+  .category .content-wrap .right-side div.fetch-tweets {
+    border: 1px solid black; } }
 @media print {
   /* All your print styles go here */ }
 html, body, div, span, applet, object, iframe,
@@ -249,6 +259,8 @@ header {
       padding: 20px 0; }
       header .menu-main-menu-container ul li {
         display: inline-block;
+        zoom: 1;
+        *display: inline;
         width: 18%;
         text-align: center;
         white-space: nowrap; }

@@ -1,9 +1,41 @@
 /*** IE 8 ***/
 @media \0screen {
-	/*STYLES*/
+	.home,
+	.category {
+		.content-wrap {
+			.left-side {
+				.post {
+					.text-wrap {
+						background-color: $color_black;
+					}
+				}
+			}
+			.right-side {
+				div.fetch-tweets {
+					border: 1px solid $color_black;
+				}
+			}
+		}
+	}
 }
 
 /*** IE 7 ***/
 @media screen\9 {
-	/*STYLES*/
+	.home,
+	.category {
+		.content-wrap {
+			.left-side {
+				.post {
+					.text-wrap {
+						background-color: $color_black;
+					}
+				}
+			}
+			.right-side {
+				div.fetch-tweets {
+					border: 1px solid $color_black;
+				}
+			}
+		}
+	}
 }
