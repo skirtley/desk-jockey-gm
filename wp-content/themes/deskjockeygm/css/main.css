@@ -32,6 +32,9 @@
         position: absolute;
         bottom: 0;
         padding: 20px; }
+        .home .content-wrap .left-side .post .text-wrap a.addthis_button,
+        .category .content-wrap .left-side .post .text-wrap a.addthis_button {
+          display: none; }
       .home .content-wrap .left-side .post .read-more,
       .category .content-wrap .left-side .post .read-more {
         text-align: right;
