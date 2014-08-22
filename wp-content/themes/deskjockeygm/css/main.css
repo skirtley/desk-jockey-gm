@@ -123,6 +123,11 @@ body {
   body h1, body h2, body h3,
   body h4, body h5, body h6 {
     margin-bottom: 1em; }
+  body hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    padding-bottom: 1em; }
 
 .main-wrap {
   background: white;
