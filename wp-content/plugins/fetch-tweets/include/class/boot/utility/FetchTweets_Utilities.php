@@ -10,7 +10,7 @@
  * 
  */
 
-final class FetchTweets_Utilities {
+class FetchTweets_Utilities {
 	
 	/**
 	 * Merges multiple multi-dimensional array recursively.
@@ -185,5 +185,5 @@ final class FetchTweets_Utilities {
 			: implode( ',', $_aElements )
 		;
 	}
-	
+		
 }

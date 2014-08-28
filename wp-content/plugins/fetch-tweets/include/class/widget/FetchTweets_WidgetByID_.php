@@ -20,6 +20,14 @@ abstract class FetchTweets_WidgetByID_ extends FetchTweets_Widget_Base {
 	protected function echoTweets( $aInstance ) {
 		
 		$aInstance = $aInstance + $this->_aStructure_FormElements;
+		
+		if ( ! count( $aInstance['selected_ids'] ) ) {
+			echo "<p><strong>Fetch Tweets</strong>: " 
+					. __( 'At least one rule needs to be selected in the widget form.', 'fetch-tweets' )
+				. "</p>";
+			return;
+		}		
+		
 		fetchTweets( 
 			array( 	// $aArgs
 				'ids'					=>	$aInstance['selected_ids'],
@@ -106,7 +114,8 @@ abstract class FetchTweets_WidgetByID_ extends FetchTweets_Widget_Base {
 			<br />
 			<select name="<?php echo $aNames['template']; ?>" id="<?php echo $aIDs['template']; ?>" >
 				<?php 
-				foreach( $GLOBALS['oFetchTweets_Templates']->getTemplateArrayForSelectLabel() as $sTemplateSlug => $sTemplateName ) 
+                $_oTemplate = FetchTweets_Templates::getInstance();
+				foreach( $_oTemplate->getTemplateArrayForSelectLabel() as $sTemplateSlug => $sTemplateName ) 
 					echo "<option value='{$sTemplateSlug}' "				
 						. ( $aInstance['template'] == $sTemplateSlug ? 'selected="Selected"' : '' )
 						. ">"
