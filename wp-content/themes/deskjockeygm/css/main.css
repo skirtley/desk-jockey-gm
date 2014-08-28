@@ -152,6 +152,7 @@ body {
     .main-wrap .body-content ul {
       line-height: 1.5em;
       list-style-image: url("../img/mascot_bullet.png");
+      list-style-type: disc;
       padding: 30px 40px; }
       .main-wrap .body-content ul li {
         padding: 10px 0; }
