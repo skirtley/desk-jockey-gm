@@ -117,7 +117,8 @@ body {
   body strong {
     font-weight: bold; }
   body em {
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 200; }
   body .clear {
     clear: both; }
   body h1, body h2, body h3,
@@ -148,6 +149,12 @@ body {
       color: black;
       font-style: italic;
       margin-bottom: 15px; }
+    .main-wrap .body-content ul {
+      line-height: 1.5em;
+      list-style-image: url("../img/mascot_bullet.png");
+      padding: 0 40px; }
+      .main-wrap .body-content ul li {
+        padding: 10px 0px; }
 
 a.addthis_button {
   display: block;

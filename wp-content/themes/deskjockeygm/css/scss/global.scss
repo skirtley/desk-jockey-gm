@@ -25,6 +25,7 @@ body {
 
 	em {
 		font-style: italic;
+		font-weight: 200;
 	}
 
 	.clear {
@@ -63,6 +64,14 @@ body {
 			color: $color_black;
 			font-style: italic;
 			margin-bottom: 15px;
+		}
+		ul {
+			line-height: 1.5em;
+			list-style-image: url("../img/mascot_bullet.png");
+			padding: 0 40px;
+			li {
+				padding: 10px 0px;
+			}
 		}
 	}
 }
