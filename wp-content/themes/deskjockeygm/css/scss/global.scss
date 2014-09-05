@@ -74,6 +74,23 @@ body {
 				padding: 10px 0;
 			}
 		}
+		table {
+			margin: 0 auto;
+			margin-bottom: 1.5em;
+			border: 1px solid blue;
+			text-align: center;
+			th {
+				color: white;
+				background: $color_blue_off;
+				padding: 10px;
+			}
+			td {
+				border: 1px solid $color_blue_off;
+				padding: 5px;
+				width: 50%;
+				font-size: 14px;
+			}
+		}
 	}
 }
 

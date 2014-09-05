@@ -156,6 +156,20 @@ body {
       padding: 30px 40px; }
       .main-wrap .body-content ul li {
         padding: 10px 0; }
+    .main-wrap .body-content table {
+      margin: 0 auto;
+      margin-bottom: 1.5em;
+      border: 1px solid blue;
+      text-align: center; }
+      .main-wrap .body-content table th {
+        color: white;
+        background: #336699;
+        padding: 10px; }
+      .main-wrap .body-content table td {
+        border: 1px solid #336699;
+        padding: 5px;
+        width: 50%;
+        font-size: 14px; }
 
 a.addthis_button {
   display: block;
